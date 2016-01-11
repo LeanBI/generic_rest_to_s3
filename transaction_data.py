@@ -18,7 +18,7 @@ class transaction_data():
     def __init__(self,**kwargs):
         self.base_url=environ.get("URL_DATA_TRANSACTION",None)
         self.storage=object_storage()
-        self.intverval=environ.get("INTERVAL",30)
+        self.intverval=environ.get("REST_POLLING_INTERVAL",30)
         self.file_name=environ.get("FILE_BASE_NAME","myFile-$date.txt")
         self.file_date_format=environ.get("FILE_DATE_FORMAT","%Hh%M")
         self.dir_name=environ.get("DIR_BASE_NAME","myDir-$date")
