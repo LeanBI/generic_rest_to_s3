@@ -29,7 +29,7 @@ class transaction_data():
             while True:
                 data=self.get_data()
                 self.store(data)
-                time.sleep(self.intverval)
+                time.sleep(float(self.intverval))
         except Exception as e:
             logging.exception(e)
 
